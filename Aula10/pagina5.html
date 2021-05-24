@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        main{
+            background-color: cornsilk;
+            width: 100vw;
+            height: 100vh;
+            display:grid;
+            
+            grid-template-areas: '. c c .'
+                                 '. v n .'
+                                 '. r r .';
+
+            grid-template-rows: 15vh auto 8vh;
+            grid-template-columns: 10vw 20vw auto 10vw;
+        }
+
+        .cabecalho{
+            background-color: darkblue;
+            grid-area: c;
+        }
+
+        .conteudo{
+            background-color: white;
+            grid-area: n;
+
+        }
+
+        .navegacao{
+            background-color: darkgreen;
+            grid-area: v;
+        }
+
+        .rodape{
+            background-color: lightskyblue;
+            grid-area: r;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="cabecalho"></section>
+        <section class="conteudo"></section>
+        <section class="navegacao"></section>
+        <section class="rodape"></section>
+    </main>
+</body>
+</html>

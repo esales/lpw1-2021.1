@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        h1, h2 {
+            color: darkblue;
+        }
+
+        h1::first-letter{
+            font-size: 2em;
+            color: chartreuse;
+            background-color: black;
+        }
+        h1:after{
+            content: "!!!";
+        }
+
+        /* h1:before{
+            content: ">";
+        } */
+    </style>
+
+</head>
+<body>
+    <h1>Texto 1</h1>
+    <h2>Texto 2</h2>
+    
+</body>
+</html>

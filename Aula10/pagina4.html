@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        main{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display:grid;
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 2fr;
+
+            column-gap: 2vw;
+            row-gap: 2vh
+
+        }
+
+        section{
+            border:1px solid black;
+            background-color: lightgreen;
+            font-size: 40px;
+        }
+
+        #primeiro{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+        }
+
+        #segundo{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+        }
+
+        #terceiro{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="primeiro">1</section>
+        <section id="segundo">2</section>
+        <section id="terceiro">3</section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="pagina02.php" method="GET">
+        
+        <label for="inputNome">Nome</label>
+        <input type="text" id="inputNome" name="nome">
+
+        <br><br>
+
+        <label for="inputData">Data</label>
+        <input type="date" id="inputData" name="data">
+
+        <br><br>
+
+        <label for="idArea">Área</label>
+        <select id="selectArea" name="area">
+            <option value="1" >Programação</option>
+            <option value="2" >Banco de dados</option>
+            <option value="3" selected>Testes</option>
+        </select>
+
+        <br><br>
+        
+        <label>Nível</label>
+        <br>
+
+        <input type="radio" id="radioJunior" value="1" name="nivel">
+        <label for="radioJunior">Júnior</label>
+
+        <input type="radio" id="radioPleno" value="2" name="nivel">
+        <label for="radioPleno">Pleno</label>
+
+        <input type="radio" id="radioSenior" value="3" name="nivel">
+        <label for="radioSenior">Sênior</label>
+
+        <br><br>
+
+        <label>Conhecimentos</label>
+        <br>
+        <input type="checkbox" id="chkPHP" value="PHP" name="PHP">
+        <label for="chkPHP">PHP</label>
+        <input type="checkbox" id="chkScrum" value="Scrum" name="Scrum">
+        <label for="chkScrum">Scrum</label>
+        <input type="checkbox" id="chkOracle" value="Oracle" name="Oracle">
+        <label for="chkOracle">Oracle</label>
+        
+        <br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
