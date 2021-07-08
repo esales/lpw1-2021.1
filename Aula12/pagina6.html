@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+        function funcao(a, b, c=10, d=12, e=0){
+            return a + b + c + d + e;
+        }
+
+        function retornaMultiplicacao(a, b){
+            return a*b;
+        }
+
+        console.log(funcao(1, 5, 4));
+
+        let exemplo = funcao;
+
+        console.log(exemplo(1, 2));
+
+        console.log( exemplo(1, retornaMultiplicacao(2, 5), 5) );
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

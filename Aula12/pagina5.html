@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+        let pessoa = {
+            nome: "Eric",
+            idade: 39,
+            endereco: {
+                logradouro: "rua abc",
+                numero: 123
+            }
+        }
+        
+        
+        console.log(pessoa.nome);
+        console.log(pessoa.endereco.numero);
+        console.log(pessoa['idade']);
+        console.log(pessoa['endereco']['logradouro']);
+
+        console.log(typeof pessoa);
+
+        let pessoa2 = {};
+        console.log(typeof pessoa2);
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
