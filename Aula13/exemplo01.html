@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+        function funcao(){
+            let id = document.activeElement.id;
+            console.log('O id do elemento ativo é ' + id);
+        }
+    </script>
+</head>
+<body>
+
+    <div onclick="funcao()">
+        <input type="text" id="elemento1">
+        <input type="text" id="elemento2">
+    </div>
+
+</body>
+</html>

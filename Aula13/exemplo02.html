@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div id="elementoDiv">
+        <input type="text" id="elemento1">
+        <input type="text" id="elemento2">
+    </div>
+
+
+    <script>
+        let imprimirNoConsole = true;
+
+        if (imprimirNoConsole) {
+            let elementoDiv = document.getElementById('elementoDiv');
+
+            elementoDiv.addEventListener('click', function () {
+                let id = document.activeElement.id;
+                console.log('O id do elemento ativo é ' + id);
+            });
+        }
+    </script>
+</body>
+
+</html>

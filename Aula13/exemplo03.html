@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="imagem">
+
+    <button onclick="funcao()">Ok!</button>
+    <button onclick="alterarTamanhoImagem()">imagem</button>
+
+    <script>
+        function funcao() {
+            let objetoImagem = document.getElementById('imagem');
+            let objetoAtributo = document.createAttribute('src');
+
+            objetoAtributo.value = "https://www.ifpe.edu.br/campus/garanhuns/noticias/campus-lanca-edital-de-fluxo-continuo-para-capacitacao/logo-garanhuns-01.jpg/@@images/c0f9df65-20cc-4c1f-8799-61adb530ca84.jpeg"
+            objetoImagem.setAttributeNode(objetoAtributo);
+        }
+
+        function alterarTamanhoImagem(){
+            let objetoImagem = document.getElementById('imagem');
+            objetoImagem.style.width = '100px';
+            objetoImagem.style.height = '100px';
+        }
+    </script>
+</body>
+
+</html>

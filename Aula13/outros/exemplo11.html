@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div id="elementoDiv"></div>
+
+    <script>
+        let elementoDiv = document.getElementById('elementoDiv');
+        elementoDiv.addEventListener('mouseover', function (event){
+            alert('mouse over!');
+        });
+
+        elementoDiv.addEventListener('mouseout', function (event){
+            alert('mouse out!');
+        });
+
+        elementoDiv.addEventListener('click', function (event){
+            alert('click!');
+        });
+
+        elementoDiv.addEventListener('dblclick', function (event){
+            alert('double click!');
+        });
+    </script>
+</body>
+</html>

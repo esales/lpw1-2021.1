@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button id="botao">Adicionar</button>
+    <ul id="lista">
+
+    </ul>
+
+    <section on></section>
+    
+    <script>
+        function adicionarItem(){
+            let objetoLista = document.getElementById('lista');
+            let objetoItem = document.createElement('li');
+
+            let objetoTexto = document.createTextNode('Qualquer texto!');
+            objetoItem.appendChild(objetoTexto);
+
+            objetoLista.appendChild(objetoItem);
+        }
+
+        let botao = document.getElementById('botao');
+        botao.addEventListener('click', function(){
+            adicionarItem();
+        });
+    </script>
+    
+</body>
+</html>

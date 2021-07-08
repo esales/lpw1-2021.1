@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  
+  <style>
+    body {
+      background-color: darkblue;
+    }
+  
+    p {
+      font-family: Arial;
+      font-size: 10pt;
+      margin-left: .125in;
+    }
+  
+    #lumpy {
+      display: none;
+    }
+  </style>
+  
+  <script>
+    var ss = document.styleSheets;
+  
+    for (var i = 0; i < ss.length; i++) {
+      for (var j = 0; j < ss[i].cssRules.length; j++) {
+        console.log(ss[i].cssRules[j].selectorText + "\n");
+      }
+    }
+  
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
